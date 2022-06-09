@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
 * main - entry point
 * @n: numero
@@ -7,6 +8,6 @@
 */
 int print_last_digit(int n)
 {
-	_putchar((abs(n)) % 10 + '0');
+	_putchar((abs(n) % 10) + '0');
 	return ((abs(n)) % 10 );
 }
