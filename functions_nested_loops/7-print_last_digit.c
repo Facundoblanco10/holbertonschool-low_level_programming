@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-* main - entry point
+* print_last_digit - entry point
 * @n: numero
 * Return: Always 0.
 */
