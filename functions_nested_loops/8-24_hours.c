@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* jack_bauer
-* 
+* jack_bauer - 24 hours function
+*
 * Return: always 0
 */
 
