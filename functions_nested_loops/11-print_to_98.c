@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* print_to_98 - function that prints all natural numbers until 98 
+* print_to_98 - function that prints all natural numbers until 98
 * @n: random number
 */
 
