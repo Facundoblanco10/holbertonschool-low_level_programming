@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_numbers: entry point
+* print_numbers - entry point
 *
 */
 
