@@ -14,20 +14,21 @@ int main(void)
 	{
 		if (c % 15 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		else if (c % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
 		else if (c % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		else
 		{
-			printf("%d ", c);
+			printf("%d", c);
 		}
+		printf(" ");
 	}
 		putchar('\n');
 	return (0);
