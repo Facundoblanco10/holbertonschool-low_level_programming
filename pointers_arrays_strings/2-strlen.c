@@ -2,9 +2,9 @@
 #include <string.h>
 
 /**
-* 
+* _strlen - entry point
 *
-*
+* @s: variable
 */
 
 int _strlen(char *s)
