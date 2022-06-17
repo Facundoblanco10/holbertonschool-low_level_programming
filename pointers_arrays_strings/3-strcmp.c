@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
-*
-*
-*
+* _strcmp - entry point
+* @s1: variable
+* @s2: variable
+* Return: 0 if they are equals
 */
 
 int _strcmp(char *s1, char *s2)
