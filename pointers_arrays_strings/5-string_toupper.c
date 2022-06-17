@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
+* string_toupper - entry point
 *
-*
-*
+* @t: character
 */
 
 char *string_toupper(char *t)
