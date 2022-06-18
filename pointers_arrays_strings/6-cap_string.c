@@ -10,6 +10,8 @@ char *cap_string(char *t)
 {
 	int i = 0;
 
+	if (t[i] >= 97 && t[i] <= 122)
+	t[i] -= 32;
 	while (t[i])
 	{
 		if (t[i] >= 97 && t[i] <= 122)
