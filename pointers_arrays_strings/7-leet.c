@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* leet - 
+* leet - entry point
 *
-*
+* @l: variable
 */
 
 char *leet(char *l)
