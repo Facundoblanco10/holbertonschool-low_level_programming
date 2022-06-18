@@ -2,8 +2,8 @@
 
 /**
 * cap_string - entry point
-*
 * @t: variable
+* Return: t
 */
 
 char *cap_string(char *t)
@@ -17,7 +17,9 @@ char *cap_string(char *t)
 		if (t[i] >= 97 && t[i] <= 122)
 		{
 			i--;
-			if (t[i] == ' ' || t[i] == '\t' || t[i] == '\n' || t[i] == ',' || t[i] == ';' || t[i] == '.' || t[i] == '!' || t[i] == '?' || t[i] == '"' || t[i] == '(' || t[i] == ')' || t[i] == '{' || t[i] == '}')
+			if (t[i] == ' ' || t[i] == '\t' || t[i] == '\n' || t[i] == ',' ||
+				t[i] == ';' || t[i] == '.' || t[i] == '!' || t[i] == '?' ||
+				t[i] == '"' || t[i] == '(' || t[i] == ')' || t[i] == '{' || t[i] == '}')
 			{
 				i++;
 				t[i] -= 32;
