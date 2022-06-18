@@ -2,8 +2,8 @@
 
 /**
 * leet - entry point
-*
 * @l: variable
+* Return: l
 */
 
 char *leet(char *l)
