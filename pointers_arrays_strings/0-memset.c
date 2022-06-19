@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
-*
-*
-*
+* _memset - entry point
+* @s: area
+* @b: constant char
+* @n: n times
+* Return: s
 */
 
 char *_memset(char *s, char b, unsigned int n)
