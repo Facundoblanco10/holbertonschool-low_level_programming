@@ -31,5 +31,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 		c++;
 	}
-	return (&s[c]);
+	return ('\0');
 }
