@@ -1,20 +1,31 @@
 #include "main.h"
 
 /**
-* _sqrt_recursion - entry point
+* iterador - entry point
 * @n:
 * Return: result
 */
 
-int _sqrt_recursion(int n)
+int iterador(int n, int i)
 {
-	if (y > 0)
-	{
-		return (_sqrt_recursion(
+	if (i <= n)
+	{	
+		if (i * i == n)
+		{
+			return (i);
+		}
+		else if (i * i != n)
+		{
+			return (iterador(n, i + 1));
+		}
 	}
-	if (i < 0)
+	else
 	{
 		return (-1);
 	}
-	return (1);
+	return (-1);
+}
+int _sqrt_recursion(int n)
+{
+	return (iterador(n, 1));
 }
