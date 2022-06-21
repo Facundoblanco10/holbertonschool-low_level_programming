@@ -10,16 +10,16 @@
 
 int main(int argc, char *argv[])
 {
-	int a = atoi(argv[1]);
-	int e = atoi(argv[2]);
-
 	if (argc == 3)
 	{
+		int a = atoi(argv[1]);
+		int e = atoi(argv[2]);
+
 		printf("%d\n", (e * a));
 	}
 	else
 	{
-		printf("Error");
+		printf("Error\n");
 	}
 	return (0);
 }
