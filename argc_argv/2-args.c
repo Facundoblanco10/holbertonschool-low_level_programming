@@ -4,6 +4,7 @@
 * main - entry point
 * @argc: unused
 * @argv: arguments
+* Return: 0
 */
 
 int main(int argc, char *argv[])
