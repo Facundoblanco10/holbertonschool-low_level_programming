@@ -28,6 +28,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		ar[len] = s2[c];
 	}
-	ar[len] = NULL;
+	ar[len] = '\0';
 	return (ar);
 }
