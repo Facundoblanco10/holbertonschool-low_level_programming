@@ -24,15 +24,14 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (new);
 	}
 	bef = *head;
-	while (bef && i < idx - 1)
+	while (bef && i < (idx - 1))
 	{
 		if (!bef->next)
 			return (NULL);
 		i++;
 		bef = bef->next;
 	}
-	new = bef;
-	new = new->next;
+	new->next = bef->next;
 	bef->next = new;
 	return (new);
 }
