@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 	char_save = read(input, buf, 1024);
 	while (char_save)
 	{
-		if (write(output, buf, char_save))
+		if (write(output, buf, char_save) != char_save)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
