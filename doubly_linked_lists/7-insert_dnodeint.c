@@ -25,16 +25,14 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (new);
 	}
 	bef = *h;
-	aft = *h;
 	while (bef && i != (idx - 1))
 	{
 		if (!bef->next)
 			return (NULL);
 		i++;
 		bef = bef->next;
-		aft = aft->next;
 	}
-	aft = aft->next;
+	aft = bef->next;
 	new->prev = bef;
 	new->next = aft;
 	bef->next = new;
