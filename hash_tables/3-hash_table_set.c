@@ -18,8 +18,20 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index = key_index((unsigned char *)key, ht->size);
 
 	newnode = (hash_node_t *) malloc(sizeof(hash_node_t));
+	if (!newnode)
+		return (0);
 	newnode->key = dupkey;
 	newnode->value = dupval;
+
+	if (!ht->array[index] || strcmp(ht->array[index]->key, key) == 0)
+	{
+		if (ht->array[index])
+		{
+			free(ht->array[index]->value);
+			free(ht->array[index]->key);
+			free(ht->array[index]);
+		}
+	}
 	ht->array[index] = newnode;
 
 	return (1);
